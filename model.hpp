@@ -28,7 +28,7 @@ public:
 
     void init(string model_path);
 
-    Mat predict(string img_path);
+    Mat predict(Mat image);
     
     torch::jit::script::Module module;
     

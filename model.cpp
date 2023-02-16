@@ -18,10 +18,10 @@ void Unet::init(string model_path)
     this->module = torch::jit::load(model_path);
 }
 
-Mat Unet::predict(string filedir)
+Mat Unet::predict(Mat image)
 {
-    cv::Mat image = cv::imread(filedir);
-    std::cout << image.rows <<" " << image.cols <<" " << image.channels() << std::endl;
+//    cv::Mat image = cv::imread(filedir);
+//    std::cout << image.rows <<" " << image.cols <<" " << image.channels() << std::endl;
 	cv::cvtColor(image, image, cv::COLOR_BGR2RGB);
 	cv::Mat img_resize;
     resize(image,img_resize, cv::Size(cfg.img_size, cfg.img_size));

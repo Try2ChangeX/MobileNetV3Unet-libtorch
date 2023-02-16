@@ -1,0 +1,3 @@
+/home/calyx/c_projects/unet_libtorch/cmake-build-debug/CMakeFiles/unet_libtorch.dir
+/home/calyx/c_projects/unet_libtorch/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/calyx/c_projects/unet_libtorch/cmake-build-debug/CMakeFiles/rebuild_cache.dir
