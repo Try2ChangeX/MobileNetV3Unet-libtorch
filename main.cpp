@@ -43,7 +43,7 @@ int main(int argc, const char* argv[])
 
         cout << "\nFrame:" << frame << endl;
         char filename_str[80];
-        sprintf(filename_str, "/media/calyx/Windy/wdy/3B_data/pngs/WavFile_aa_1121/%d.png", frame);
+        sprintf(filename_str, "%d.png", frame);
 
         cv::Mat image = cv::imread(filename_str);
         int rows = image.rows;
